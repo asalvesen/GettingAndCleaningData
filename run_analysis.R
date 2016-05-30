@@ -88,3 +88,6 @@ as_means <- dcast(melted, Subject + Activity ~ variable, mean)
 #         mean(by_subject$`1`$`fBodyBodyGyroJerkMag-std()`)
 # })
 # then unlist it out
+
+View(all)
+View(as_means)
