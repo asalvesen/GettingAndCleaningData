@@ -89,5 +89,8 @@ as_means <- dcast(melted, Subject + Activity ~ variable, mean)
 # })
 # then unlist it out
 
+write.table(as_means, file = "./UCI HAR Dataset/tidy_data.txt",
+            row.names = FALSE)
+
 View(all)
 View(as_means)
